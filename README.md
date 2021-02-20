@@ -44,6 +44,34 @@ CREATE TABLE public.parent (
 
 Specify the relationship between the table during the POST method
 
-## Installation
+## Installation 
 
-Install the dependencies and devDependencies and start the ser
+```sh
+git clone https://github.com/hermescanutodesouza/lubytest.git
+
+cd lubytest/
+
+docker-compose up -d
+```
+
+## Run Locally 
+- Need to configure the connection to the database through the environmental variables.
+- Install all dependencies 
+- run the project
+
+Example
+```
+export POSTGRES_URL=<postgresql>
+export POSTGRES_USER=<postgres>
+export POSTGRES_PASSWORD=<1234>
+export POSTGRES_DB=<postgres>
+
+cd lubytest/
+pip install -r requirements.txt
+python main.py
+```
+
+## Requirements
+
+- python v3.8+
+- postgre v11+
