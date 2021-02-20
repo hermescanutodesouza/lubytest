@@ -1,0 +1,29 @@
+version: '3'
+
+networks:
+  net:
+    driver: bridge
+
+services:
+  postgresql:
+    container_name: postgresql
+    image: 'bitnami/postgresql:latest'
+    networks:
+      - net
+    environment:
+      - POSTGRESQL_PASSWORD=1234
+  app:
+    container_name: luby
+    build:
+      context: .
+      dockerfile: Backend/Dockerfile
+    networks:
+      - net
+    ports:
+      - '5000:5000'
+    restart: on-failure
+    environment:
+      - POSTGRES_URL=postgresql
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=postgres
