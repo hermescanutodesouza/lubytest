@@ -1,0 +1,1321 @@
+{
+	"info": {
+		"_postman_id": "70110e7e-231e-4f79-9479-4e356d3a9f3b",
+		"name": "Luby",
+		"description": "Luby Python Test\n\nWrite a simple restful service.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Child",
+			"item": [
+				{
+					"name": "Create Child",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"name\":\"osvaldinho do acordeon\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/child",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Child",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"name\":\"osvaldinho do acordeon\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:04:52 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"name\": \"osvaldinho do acordeon\",\n    \"createdAt\": \"2021-02-20 14:04:52\",\n    \"updatedAt\": \"2021-02-20 14:04:52\",\n    \"parent\": []\n}"
+						},
+						{
+							"name": "Create Child",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"name\":\"osvaldinho do acordeon\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:02:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"osvaldinho do acordeon\",\n    \"createdAt\": \"2021-02-20 14:02:44\",\n    \"updatedAt\": \"2021-02-20 14:02:44\",\n    \"parent\": []\n}"
+						},
+						{
+							"name": "Create Child",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n    \"name\":\"Clark Kent\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "118"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:37:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"name\": \"Clark Kent\",\n    \"createdAt\": \"2021-02-20 14:37:27\",\n    \"updatedAt\": \"2021-02-20 14:37:27\",\n    \"parent\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Child and Parent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"osvaldinho do acordeon\",\n    \"parent\":[\n        {\"name\":\"carlos\"},\n        {\"name\":\"Priscila\"}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/child",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Child and associates with a id's parent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"silvio\",\n    \"parent\": [\n        {\n            \"id\": 2\n        },\n        {\n            \"id\": 2\n        }  \n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/child",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Child and associeate with Parent ID",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"silvio\",\n    \"parent\": [\n        {\n            \"id\": 1\n        },\n        {\n            \"id\": 2\n        }  \n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "320"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:08:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"name\": \"silvio\",\n    \"createdAt\": \"2021-02-20 14:08:49\",\n    \"updatedAt\": \"2021-02-20 14:08:49\",\n    \"parent\": [\n        {\n            \"id\": 1,\n            \"name\": \"Pai Antonio\",\n            \"createdAt\": \"2021-02-20 13:42:04\",\n            \"updatedAt\": \"2021-02-20 13:42:04\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Pai zeca\",\n            \"createdAt\": \"2021-02-20 13:43:24\",\n            \"updatedAt\": \"2021-02-20 13:43:24\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List all Children",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/children",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"children"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List all Children",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1902"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:11:20 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"michele\",\n        \"createdAt\": \"2021-02-20 13:45:34\",\n        \"updatedAt\": \"2021-02-20 13:45:34\",\n        \"parent\": [\n            {\n                \"id\": 3,\n                \"name\": \"Pai ovo\",\n                \"createdAt\": \"2021-02-20 13:43:32\",\n                \"updatedAt\": \"2021-02-20 13:43:32\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Pai Claudio\",\n                \"createdAt\": \"2021-02-20 13:43:59\",\n                \"updatedAt\": \"2021-02-20 13:43:59\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 13:55:36\",\n        \"updatedAt\": \"2021-02-20 13:55:36\",\n        \"parent\": [\n            {\n                \"id\": 6,\n                \"name\": \"Pai super\",\n                \"createdAt\": \"2021-02-20 13:59:40\",\n                \"updatedAt\": \"2021-02-20 13:59:40\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Pai YYY\",\n                \"createdAt\": \"2021-02-20 14:01:03\",\n                \"updatedAt\": \"2021-02-20 14:01:03\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:02:44\",\n        \"updatedAt\": \"2021-02-20 14:02:44\",\n        \"parent\": []\n    },\n    {\n        \"id\": 5,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:04:52\",\n        \"updatedAt\": \"2021-02-20 14:04:52\",\n        \"parent\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"parent\": [\n            {\n                \"id\": 9,\n                \"name\": \"pai\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"mae\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"parent\": [\n            {\n                \"id\": 11,\n                \"name\": \"carlos\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Priscila\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"name\": \"silvio\",\n        \"createdAt\": \"2021-02-20 14:08:49\",\n        \"updatedAt\": \"2021-02-20 14:08:49\",\n        \"parent\": [\n            {\n                \"id\": 1,\n                \"name\": \"Pai Antonio\",\n                \"createdAt\": \"2021-02-20 13:42:04\",\n                \"updatedAt\": \"2021-02-20 13:42:04\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Pai zeca\",\n                \"createdAt\": \"2021-02-20 13:43:24\",\n                \"updatedAt\": \"2021-02-20 13:43:24\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "List all Children",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1902"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:11:20 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"michele\",\n        \"createdAt\": \"2021-02-20 13:45:34\",\n        \"updatedAt\": \"2021-02-20 13:45:34\",\n        \"parent\": [\n            {\n                \"id\": 3,\n                \"name\": \"Pai ovo\",\n                \"createdAt\": \"2021-02-20 13:43:32\",\n                \"updatedAt\": \"2021-02-20 13:43:32\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Pai Claudio\",\n                \"createdAt\": \"2021-02-20 13:43:59\",\n                \"updatedAt\": \"2021-02-20 13:43:59\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 13:55:36\",\n        \"updatedAt\": \"2021-02-20 13:55:36\",\n        \"parent\": [\n            {\n                \"id\": 6,\n                \"name\": \"Pai super\",\n                \"createdAt\": \"2021-02-20 13:59:40\",\n                \"updatedAt\": \"2021-02-20 13:59:40\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Pai YYY\",\n                \"createdAt\": \"2021-02-20 14:01:03\",\n                \"updatedAt\": \"2021-02-20 14:01:03\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:02:44\",\n        \"updatedAt\": \"2021-02-20 14:02:44\",\n        \"parent\": []\n    },\n    {\n        \"id\": 5,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:04:52\",\n        \"updatedAt\": \"2021-02-20 14:04:52\",\n        \"parent\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"parent\": [\n            {\n                \"id\": 9,\n                \"name\": \"pai\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"mae\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"parent\": [\n            {\n                \"id\": 11,\n                \"name\": \"carlos\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Priscila\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"name\": \"silvio\",\n        \"createdAt\": \"2021-02-20 14:08:49\",\n        \"updatedAt\": \"2021-02-20 14:08:49\",\n        \"parent\": [\n            {\n                \"id\": 1,\n                \"name\": \"Pai Antonio\",\n                \"createdAt\": \"2021-02-20 13:42:04\",\n                \"updatedAt\": \"2021-02-20 13:42:04\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Pai zeca\",\n                \"createdAt\": \"2021-02-20 13:43:24\",\n                \"updatedAt\": \"2021-02-20 13:43:24\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "List all the children with a parent filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/children?parents=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"children"
+							],
+							"query": [
+								{
+									"key": "parents",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List children with number of parents",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children?parents=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children"
+									],
+									"query": [
+										{
+											"key": "parents",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1625"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:17:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"michele\",\n        \"createdAt\": \"2021-02-20 13:45:34\",\n        \"updatedAt\": \"2021-02-20 13:45:34\",\n        \"parent\": [\n            {\n                \"id\": 3,\n                \"name\": \"Pai ovo\",\n                \"createdAt\": \"2021-02-20 13:43:32\",\n                \"updatedAt\": \"2021-02-20 13:43:32\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Pai Claudio\",\n                \"createdAt\": \"2021-02-20 13:43:59\",\n                \"updatedAt\": \"2021-02-20 13:43:59\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 13:55:36\",\n        \"updatedAt\": \"2021-02-20 13:55:36\",\n        \"parent\": [\n            {\n                \"id\": 6,\n                \"name\": \"Pai super\",\n                \"createdAt\": \"2021-02-20 13:59:40\",\n                \"updatedAt\": \"2021-02-20 13:59:40\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Pai YYY\",\n                \"createdAt\": \"2021-02-20 14:01:03\",\n                \"updatedAt\": \"2021-02-20 14:01:03\"\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"name\": \"osvaldinho do acordeon\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"parent\": [\n            {\n                \"id\": 9,\n                \"name\": \"pai\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"mae\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"name\": \"silvio\",\n        \"createdAt\": \"2021-02-20 14:08:49\",\n        \"updatedAt\": \"2021-02-20 14:08:49\",\n        \"parent\": [\n            {\n                \"id\": 1,\n                \"name\": \"Pai Antonio\",\n                \"createdAt\": \"2021-02-20 13:42:04\",\n                \"updatedAt\": \"2021-02-20 13:42:04\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Pai zeca\",\n                \"createdAt\": \"2021-02-20 13:43:24\",\n                \"updatedAt\": \"2021-02-20 13:43:24\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"michele\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"parent\": [\n            {\n                \"id\": 11,\n                \"name\": \"carlos\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Priscila\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "List all the children with a parent filter",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/children?parents=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"children"
+									],
+									"query": [
+										{
+											"key": "parents",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "216"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:24:26 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 8,\n        \"name\": \"silvio\",\n        \"createdAt\": \"2021-02-20 14:08:49\",\n        \"updatedAt\": \"2021-02-20 14:08:49\",\n        \"parent\": [\n            {\n                \"id\": 2,\n                \"name\": \"Pai zeca\",\n                \"createdAt\": \"2021-02-20 13:43:24\",\n                \"updatedAt\": \"2021-02-20 13:43:24\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show  a child",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/child/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show  a child",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/child/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "333"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:01:36 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"osvaldinho do acordeon\",\n    \"createdAt\": \"2021-02-20 13:55:36\",\n    \"updatedAt\": \"2021-02-20 13:55:36\",\n    \"parent\": [\n        {\n            \"id\": 6,\n            \"name\": \"Pai super\",\n            \"createdAt\": \"2021-02-20 13:59:40\",\n            \"updatedAt\": \"2021-02-20 13:59:40\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Pai YYY\",\n            \"createdAt\": \"2021-02-20 14:01:03\",\n            \"updatedAt\": \"2021-02-20 14:01:03\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Show  a child",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/child/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "333"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:15:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"osvaldinho do acordeon\",\n    \"createdAt\": \"2021-02-20 13:55:36\",\n    \"updatedAt\": \"2021-02-20 13:55:36\",\n    \"parent\": [\n        {\n            \"id\": 6,\n            \"name\": \"Pai super\",\n            \"createdAt\": \"2021-02-20 13:59:40\",\n            \"updatedAt\": \"2021-02-20 13:59:40\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Pai YYY\",\n            \"createdAt\": \"2021-02-20 14:01:03\",\n            \"updatedAt\": \"2021-02-20 14:01:03\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Update a child",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"michele\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/child/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update a child",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"michele\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/child/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "318"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:16:28 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"name\": \"michele\",\n    \"createdAt\": \"2021-02-20 14:05:49\",\n    \"updatedAt\": \"2021-02-20 14:05:49\",\n    \"parent\": [\n        {\n            \"id\": 11,\n            \"name\": \"carlos\",\n            \"createdAt\": \"2021-02-20 14:05:49\",\n            \"updatedAt\": \"2021-02-20 14:05:49\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Priscila\",\n            \"createdAt\": \"2021-02-20 14:05:49\",\n            \"updatedAt\": \"2021-02-20 14:05:49\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete a child",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/child/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"child",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete a child",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/child/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"child",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "22"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:17:05 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Parent",
+			"item": [
+				{
+					"name": "Create Parent with no children",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"zeca\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/parent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Parent with no children",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"ivana\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "111"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 13:09:37 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"name\": \"ivana\",\n    \"createdAt\": \"2021-02-20 13:09:37\",\n    \"updatedAt\": \"2021-02-20 13:09:37\",\n    \"child\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Parent and child",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pai Antonio\",\n    \"child\":[\n        {\"name\":\"filho do antonio\"},\n        {\"name\":\"filha do antonio\"}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/parent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Parent and associate with a id's Child",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pai YYY\",\n    \"child\":[\n        {\"id\":3},\n        {\"id\":2}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/parent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parent"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Parent and associate with a id's Child",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Pai YYY\",\n    \"child\":[\n        {\"id\":8},\n        {\"id\":9}\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:32:25 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 16,\n    \"name\": \"Pai YYY\",\n    \"createdAt\": \"2021-02-20 14:32:25\",\n    \"updatedAt\": \"2021-02-20 14:32:25\",\n    \"child\": [\n        {\n            \"id\": 8,\n            \"name\": \"silvio\",\n            \"createdAt\": \"2021-02-20 14:08:49\",\n            \"updatedAt\": \"2021-02-20 14:08:49\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"silvio\",\n            \"createdAt\": \"2021-02-20 14:30:49\",\n            \"updatedAt\": \"2021-02-20 14:30:49\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "List all the parents with a children filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/parents?children=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parents"
+							],
+							"query": [
+								{
+									"key": "children",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List all the parents with a children filter.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents?children=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents"
+									],
+									"query": [
+										{
+											"key": "children",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1996"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:23:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Pai zeca\",\n        \"createdAt\": \"2021-02-20 13:43:24\",\n        \"updatedAt\": \"2021-02-20 13:43:24\",\n        \"child\": [\n            {\n                \"id\": 8,\n                \"name\": \"silvio\",\n                \"createdAt\": \"2021-02-20 14:08:49\",\n                \"updatedAt\": \"2021-02-20 14:08:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Pai ovo\",\n        \"createdAt\": \"2021-02-20 13:43:32\",\n        \"updatedAt\": \"2021-02-20 13:43:32\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Pai Claudio\",\n        \"createdAt\": \"2021-02-20 13:43:59\",\n        \"updatedAt\": \"2021-02-20 13:43:59\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Pai super\",\n        \"createdAt\": \"2021-02-20 13:59:40\",\n        \"updatedAt\": \"2021-02-20 13:59:40\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Pai YYY\",\n        \"createdAt\": \"2021-02-20 14:01:03\",\n        \"updatedAt\": \"2021-02-20 14:01:03\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 9,\n        \"name\": \"pai\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 10,\n        \"name\": \"mae\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 11,\n        \"name\": \"carlos\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Priscila\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    }\n]"
+						},
+						{
+							"name": "List all the parents with a children filter",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents?children=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents"
+									],
+									"query": [
+										{
+											"key": "children",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1996"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:23:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Pai zeca\",\n        \"createdAt\": \"2021-02-20 13:43:24\",\n        \"updatedAt\": \"2021-02-20 13:43:24\",\n        \"child\": [\n            {\n                \"id\": 8,\n                \"name\": \"silvio\",\n                \"createdAt\": \"2021-02-20 14:08:49\",\n                \"updatedAt\": \"2021-02-20 14:08:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Pai ovo\",\n        \"createdAt\": \"2021-02-20 13:43:32\",\n        \"updatedAt\": \"2021-02-20 13:43:32\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Pai Claudio\",\n        \"createdAt\": \"2021-02-20 13:43:59\",\n        \"updatedAt\": \"2021-02-20 13:43:59\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Pai super\",\n        \"createdAt\": \"2021-02-20 13:59:40\",\n        \"updatedAt\": \"2021-02-20 13:59:40\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Pai YYY\",\n        \"createdAt\": \"2021-02-20 14:01:03\",\n        \"updatedAt\": \"2021-02-20 14:01:03\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 9,\n        \"name\": \"pai\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 10,\n        \"name\": \"mae\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 11,\n        \"name\": \"carlos\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Priscila\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "List all Parents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/parents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parents"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List all Parents",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/parents",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parents"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2348"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:20:50 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Pai zeca\",\n        \"createdAt\": \"2021-02-20 13:43:24\",\n        \"updatedAt\": \"2021-02-20 13:43:24\",\n        \"child\": [\n            {\n                \"id\": 8,\n                \"name\": \"silvio\",\n                \"createdAt\": \"2021-02-20 14:08:49\",\n                \"updatedAt\": \"2021-02-20 14:08:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Pai ovo\",\n        \"createdAt\": \"2021-02-20 13:43:32\",\n        \"updatedAt\": \"2021-02-20 13:43:32\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Pai Claudio\",\n        \"createdAt\": \"2021-02-20 13:43:59\",\n        \"updatedAt\": \"2021-02-20 13:43:59\",\n        \"child\": [\n            {\n                \"id\": 2,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 13:45:34\",\n                \"updatedAt\": \"2021-02-20 13:45:34\"\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Pai super\",\n        \"createdAt\": \"2021-02-20 13:44:51\",\n        \"updatedAt\": \"2021-02-20 13:44:51\",\n        \"child\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Pai super\",\n        \"createdAt\": \"2021-02-20 13:59:40\",\n        \"updatedAt\": \"2021-02-20 13:59:40\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Pai Antonio\",\n        \"createdAt\": \"2021-02-20 14:00:14\",\n        \"updatedAt\": \"2021-02-20 14:00:14\",\n        \"child\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Pai YYY\",\n        \"createdAt\": \"2021-02-20 14:01:03\",\n        \"updatedAt\": \"2021-02-20 14:01:03\",\n        \"child\": [\n            {\n                \"id\": 3,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 13:55:36\",\n                \"updatedAt\": \"2021-02-20 13:55:36\"\n            }\n        ]\n    },\n    {\n        \"id\": 9,\n        \"name\": \"pai\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 10,\n        \"name\": \"mae\",\n        \"createdAt\": \"2021-02-20 14:05:21\",\n        \"updatedAt\": \"2021-02-20 14:05:21\",\n        \"child\": [\n            {\n                \"id\": 6,\n                \"name\": \"osvaldinho do acordeon\",\n                \"createdAt\": \"2021-02-20 14:05:21\",\n                \"updatedAt\": \"2021-02-20 14:05:21\"\n            }\n        ]\n    },\n    {\n        \"id\": 11,\n        \"name\": \"carlos\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Priscila\",\n        \"createdAt\": \"2021-02-20 14:05:49\",\n        \"updatedAt\": \"2021-02-20 14:05:49\",\n        \"child\": [\n            {\n                \"id\": 7,\n                \"name\": \"michele\",\n                \"createdAt\": \"2021-02-20 14:05:49\",\n                \"updatedAt\": \"2021-02-20 14:05:49\"\n            }\n        ]\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Pai YYY\",\n        \"createdAt\": \"2021-02-20 14:07:56\",\n        \"updatedAt\": \"2021-02-20 14:07:56\",\n        \"child\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show a parent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/parents",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Parent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Pai Claudio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/parent/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parent",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Parent",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Pai Claudio\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/parent/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"parent",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "217"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/1.0.1 Python/3.8.5"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 20 Feb 2021 14:20:35 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"name\": \"Pai Claudio\",\n    \"createdAt\": \"2021-02-20 13:43:59\",\n    \"updatedAt\": \"2021-02-20 13:43:59\",\n    \"child\": [\n        {\n            \"id\": 2,\n            \"name\": \"michele\",\n            \"createdAt\": \"2021-02-20 13:45:34\",\n            \"updatedAt\": \"2021-02-20 13:45:34\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete a parent",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/parent/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"parent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

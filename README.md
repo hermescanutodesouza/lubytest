@@ -75,3 +75,14 @@ python main.py
 
 - python v3.8+
 - postgre v11+
+- Postman v8+
+
+## Usage 
+
+### Off line Example
+Using Postman import Luby.postman_collection.json file.
+
+### Online Example
+[https://documenter.getpostman.com/view/384862/TWDXnGZt](https://documenter.getpostman.com/view/384862/TWDXnGZt)
+
+
