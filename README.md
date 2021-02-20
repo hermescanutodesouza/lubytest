@@ -75,6 +75,8 @@ python main.py
 - python v3.8+
 - postgre v11+
 - Postman v8+
+- Docker 
+- Docker-compose
 
 ## Usage 
 
