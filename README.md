@@ -59,7 +59,6 @@ docker-compose up -d
 - Install all dependencies 
 - run the project
 
-Example
 ```
 export POSTGRES_URL=<postgresql>
 export POSTGRES_USER=<postgres>
